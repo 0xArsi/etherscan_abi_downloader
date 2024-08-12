@@ -1,0 +1,21 @@
+[package]
+name = "etherscan_abi_downloader"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+alloy-chains = "0.1.27"
+alloy-json-abi = "0.7.7"
+alloy-primitives = "0.7.7"
+anyhow = "1.0.86"
+clap = { version = "4.5.15", features = ["derive"] }
+configparser = "3.1.0"
+env_logger = "0.11.5"
+ethers-core = "2.0.14"
+foundry-block-explorers = "0.5.1"
+hex = "0.4.3"
+log = "0.4.22"
+polars = { version = "0.41.3", features = ["parquet", "lazy", "string_encoding", "streaming"] }
+serde_json = "1.0.124"
+tiny-keccak = "2.0.2"
+tokio = { version = "1.39.2", features = ["full"] }
